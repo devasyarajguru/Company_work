@@ -1,0 +1,347 @@
+*    
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul
+{
+    list-style: none;
+    background: black;
+}
+ul li
+{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a
+{
+    display: block;
+    padding: 10px 20px;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul li ul.dropdown
+{
+    width: 100%;
+    background-color:  rgb(0, 0, 0);
+    position:absolute;
+    z-index: 999;
+    display: none;
+}
+ul li ul.dropdown li
+{
+    display: block;
+}
+
+ul li a:hover
+{
+    background:rgba(244, 244, 244, 0.558);
+    color: black;
+}
+ul li:hover ul.dropdown
+{
+    display: inline-block;
+    width: auto;
+}
+
+.container
+{
+    height: auto;
+    position: relative;
+    width: 1000px;
+}
+
+.container img
+{
+    width: 100%;
+  
+}
+
+.imgtext
+{
+    position: absolute;
+    /* bottom: 45px;
+    left: 450px; */
+    text-align: center;
+    margin-top:450px;
+    margin-left:400px;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.imgtextdown
+{
+    position: absolute;
+    /* bottom: 50px;
+    left: 350px; */
+    margin-top: 500px;
+    margin-left: 325px;
+    display:inline-block;
+    color:whitesmoke;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+}
+
+.theband
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 10px;
+}
+
+.bandtxt
+{
+    text-align: center;
+    color: rgb(13, 222, 241);
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bandpara
+{
+    text-align: center;
+    padding: 90px;
+    padding-top: 30px;
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+    text-align-last: justify;
+}
+.artist{
+    display: inline-block;
+    align-items: center;
+    margin:  24px -113px 45px 120px;    
+    
+    
+ }
+
+ .artist-dimension{
+     width: 250px;
+     height: 170px;
+ 
+ }
+
+ .artist-name
+ {
+    text-align: center;
+    /* margin:  40px -300px 45px 10px; */
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: larger;
+    color:rgb(235, 5, 197);
+    font-stretch:extra-condensed;
+ }
+
+.black
+{
+    background-color: black;
+    width: 1000px;
+    height: 800px;
+    color: white;
+}
+
+.tour
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 8px;
+    padding-top: 70px;
+    font-size: large;
+    font-style: italic;
+}
+
+.tickets
+{
+    text-align: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(245, 182, 182);
+}
+
+.month
+{
+    background-color: white;
+    width: 700px;
+    color: rgb(123, 123, 123);
+    padding-left: 100px;
+    padding: 5px;
+    padding-right: 100px;
+    margin-left: 150px;
+    border-bottom: 1px solid gray;
+
+
+}
+
+.sold 
+{
+    color:white;
+    background-color: red;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.three
+{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+   
+}
+
+.places
+{
+    background-color: white;
+    width: 200px;
+    height: 350px;
+    margin-left:300px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    display: inline-block;
+    margin:  30px -160px 10px 172px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+
+.placesimg
+{
+    width: 200px;
+    height: 130px;
+    margin: 0;
+}
+.placesimg:hover
+{
+    opacity: 0.7;
+}
+
+.paracity
+{
+    color: red;
+}
+
+.places-name
+{
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.places-name-para
+{
+    color: grey;
+    margin-top: 2px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.places-name-para-one
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:3px ;
+    margin-left: 20px;
+}
+.buy-button
+{
+    margin: 5px;
+    margin-top: 10px;
+    margin-left: 16px;
+    color: white;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.buy-button:hover
+{
+    background-color: grey;
+    border: none;
+    color: black;
+    display: block;
+}
+.contact
+{
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fan
+{
+    text-align: center;
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+.font
+{
+    font-size: 15px;
+    margin: 5px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.inp-name
+{
+    margin-left: 250px;
+    width: 140px;
+    height: 30px;
+    padding: 3px;
+    padding-left: 3     px;
+    margin: 3px -190px 2px 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.inp-message
+{
+    margin-top: 12px;
+    margin-left: 138px;
+    width: 295px;
+    height: 50px;
+    margin-bottom: 12px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.send
+{
+    margin-left: 390px ;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.send:hover
+{
+    background-color: grey;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+
+}
+.img-band-down
+{
+    width: 100%;
+}
+
+.social-media
+{
+    text-align: center;
+    font-size: large;
+    letter-spacing: 2px;
+}
+.devasya
+{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(107, 107, 107);
+    letter-spacing: 5px;
+}
+
+

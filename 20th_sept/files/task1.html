@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  height: 610px;
+  width: 1000px;
+}
+.game-board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}
+.game-board :hover
+{
+  opacity: 0;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<img src="..//images/img.jpg">
+
+<div class="game-board">
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+</div>
+
+
+</body>
+</html>

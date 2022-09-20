@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Write a JavaScript function that accepts a String with space separated numbers and returns the highest and lowest number (as a string).
+    </h3>
+    Original numbers:<span id="demo"></span>
+</body>
+<script>function highestAndLowest(numbers){
+    document.getElementById("demo").innerHTML=(numbers) + "<br><br>";
+    numbers = numbers.split(" ");
+    return Math.max.apply(null, numbers) + " " +  Math.min.apply(null, numbers)
+  }
+  
+  document.write(highestAndLowest("5 65 9 3"))</script>
+</html>

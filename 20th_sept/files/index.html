@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<script src="https://kit.fontawesome.com/37f62859c5.js" crossorigin="anonymous"></script>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">More</a>
+        <ul class="dropdown">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Extras</a></li>
+        </ul>
+        </li>
+    </ul>
+
+    <!-- <div id="mydemo">
+        <a href="#band" onclick="myfunc();"></a>
+        <a href="#tour" onclick="myfunc();"></a>
+        <a href="#contact" onclick="myfunc();"></a>
+    </div> -->
+
+    <div class="container">
+
+        <img src="../images/img1.jpeg" id="home">
+        <div class="imgtext">
+        <h3>Los Angeles</h3><br><br>
+        </div>
+        
+        <div class="imgtextdown">
+        <p>We have a great time at LA beach</p>
+        </div>
+        
+        <!-- <img src="../images/img2.jpg" id="home">
+        <div class="imgtext">
+        <h3>Chicago</h3><br><br>
+        </div>
+        
+        <div class="imgtextdown">
+        <p>Thank You Chicago for wonderful night</p>
+        </div>
+
+        <img src="../images/img3.jpg" id="home">
+        <div class="imgtext">
+        <h3>New York</h3><br><br>
+        </div>
+        
+        <div class="imgtextdown">
+        <p>The Atmosphere in New York is Awseome</p>
+        </div> -->
+
+    </div><br><br><br><br><br><br>
+
+    <div class="theband" id="band">
+        <h2>THE BAND</h2><br>
+    </div>
+
+    <div class="bandtxt">
+    <p>We love music</p>
+    </div>
+
+    <div class="bandpara">
+        <p>We have created a fictional band website. A musician is a person who composes, conducts, or performs music. According to the United States Employment Service, "musician" is a general term used to designate one who follows music as a profession. Musicians include songwriters who write both music and lyrics for songs, conductors who direct a musical performance, or performers who perform for an audience. A music performer is generally either a singer who provides vocals or an instrumentalist who plays a musical instrument. Musicians may perform on their own or as part of a group, band or orchestra. Musicians specialize in a musical style, and some musicians play in a variety of different styles depending on cultures and background. A musician who records and releases music can be known as a recording artist.</p>
+    </div>
+    
+    <div class="container-artist">
+        <div class="artist">
+            <p class="artist-name">Justin Beiber</p>
+            <img src="../images/justin.jpg" class="artist-dimension" alt="" srcset="">
+        </div>
+
+        <div class="artist">
+            <p class="artist-name">Eminem</p>    
+            <img src="../images/eminem.jpg" class="artist-dimension" alt="" srcset="">
+        </div>
+
+        <div class="artist">
+            <p class="artist-name">Ed-Sheeran</p>
+            <img src="../images/ed.jpg" class="artist-dimension" alt="" srcset="">
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="black">
+        <div class="tour" id="tour">
+            TOUR DATE <br><br>
+        </div>
+
+        <div class="tickets">
+            <p>Remember to book your tickets!</p>
+        </div><br>
+        
+        <div class = "container-month">
+            <p class="month">September &nbsp;&nbsp;&nbsp;<span class="sold">Sold Out</span></p>
+            <p class="month">October &nbsp;&nbsp;&nbsp;<span class="sold">Sold Out</span></p>
+            <p class="month">November&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="three">3</span></p>
+        </div><br><br><br>
+        <div class="conatiner-places">
+            <div class="places">
+                <img src="..//images/newyork.jpg" class="placesimg">
+                <br>
+                <p class="places-name">
+                    New York
+                </p>
+                <p class="places-name-para">
+                    Fri 27 Sept 2022
+                </p>
+                <p class="places-name-para-one">
+                    Located in Northeastern USA, New York State is much larger than only Manhattan or New York City.<br>
+                </p>
+                    <input type="button" value="Buy Tickets" class="buy-button">
+            </div>
+
+            <div class="places">
+                <img src="..//images/paris.jpg" class="placesimg">
+                <br>
+                <p class="places-name">
+                    Paris
+                </p>
+                <p class="places-name-para">
+                    Mon 24 July 2023
+                </p>
+                <p class="places-name-para-one">
+                    Located in Northeastern USA, New York State is much larger than only Manhattan or New York City.
+                </p>
+                <input type="button" value="Buy Tickets" class="buy-button">
+            </div>
+
+            <div class="places">
+                <img src="..//images/san.jpg" class="placesimg">
+                <br>
+                <p class="places-name">
+                    San Francisco
+                </p>
+                <p class="places-name-para">
+                    Wed 3 Oct 2022
+                </p>
+                <p class="places-name-para-one">
+                    Located in Northeastern USA, New York State is much larger than only Manhattan or New York City.
+                </p>
+                <input type="button" value="Buy Tickets" class="buy-button">
+            </div>
+        
+        </div>
+        
+    </div><br><br><br><br><br>
+    
+    <div>
+        <p class="contact" id="contact">CONTACT</p><br>
+        <p class="fan">Fan? Drop a note</p>
+    </div><br>
+
+    <div class="font"> 
+        <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;Chicago, US
+        <input type="text" class="inp-name" placeholder="Name">
+        <input type="text" class="inp-name" placeholder="Email"><br>
+        <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;Phone: +015 151515
+        <input type="text" class="inp-message" placeholder="Message">
+        <br>
+        <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email: event@hi.com
+        <input type="button" value="Send"class="send">
+    </div><br><br><br><br>
+    <div>
+        <img src="..//images/img2.jpg" class="img-band-down">
+    </div><br><br><br>
+
+    <div class="social-media">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div><br>
+    <div class="devasya">
+        Devasya Rajguru 
+    </div>
+</body>
+</html>

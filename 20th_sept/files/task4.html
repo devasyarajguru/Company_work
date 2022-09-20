@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+        <script>
+            function myfun()
+            {
+                var str1="hello";
+                var str = document.getElementById('str').value;
+                for(var i=0;i<str.length;i++)
+                {
+                    var num = str.charCodeAt(i);
+                    if(num%2==0)
+                    {
+                        str = str.split("");
+                        str[i] = str[i].toUpperCase();
+                        str = str.join('')
+                    }
+                    else{
+                        str = str.split("");
+                        str[i] = str[i].toLowerCase();
+                        str = str.join('')
+                    }
+                }   
+                document.getElementById("res").innerHTML = "Changed value : "+str;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ASCII Even Captial</h1>
+            <h2 id="res"></h2>
+        </div>
+        <div class="bdy">
+            Enter String : <input type="text" id="str">
+        </div>
+        <div class="btn">
+            <input type="button" id="btn" value="Submit" onclick="myfun()">
+        </div>
+    </body>
+</html>

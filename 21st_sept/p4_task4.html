@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript function to get time differences in minutes between two dates</h2>
+    <h4>Enter Lunch  Time</h4>
+    <input type="number"  id="time"><br><br>
+    <input type="submit" onclick="diff_minutes();">
+</body>
+<script>
+    function diff_minutes(dt1,dt2) 
+ {  
+    const dt1 = new Date();
+    const dt2 = document.getElementById("time").value;
+    var diff =(dt2 - dt1.getHours) / 1000;
+    diff /= (60 * 60);
+    return Math.abs(Math.round(diff));
+  
+ }
+
+console.log(diff_minutes(dt1, dt2));
+
+</script>
+</html>

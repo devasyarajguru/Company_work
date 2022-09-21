@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var array = [];
+    var size = 20;
+    // for (var i=0;i<size;i++)
+    // {
+    //     array[i] = prompt("Enter array element" + i(i+1));
+    // }
+
+var result = [], temp = [], difference;
+for (var i = 0; i < array.size; i += 1) {
+        array[i] = prompt("Enter array element" + i(i+1));
+    if (difference !== (array[i] - i)) {
+        if (difference !== undefined) {
+            result.push(temp);
+            temp = [];
+        }
+        difference = array[i] - i;
+    }
+    temp.push(array[i]);
+}
+
+if (temp.length) {
+    result.push(temp);
+}
+
+console.log(result);
+</script>
+</html>

@@ -9,21 +9,31 @@
 <body>
     <h2>JavaScript function to get time differences in minutes between two dates</h2>
     <h4>Enter Lunch  Time</h4>
-    <input type="number"  id="time"><br><br>
+    <input type="datetime"  id="time"><br><br>
     <input type="submit" onclick="diff_minutes();">
 </body>
 <script>
-    function diff_minutes(dt1,dt2) 
+
+    function diff_minutes()
  {  
     const dt1 = new Date();
-    const dt2 = document.getElementById("time").value;
-    var diff =(dt2 - dt1.getHours) / 1000;
-    diff /= (60 * 60);
-    return Math.abs(Math.round(diff));
+    const dt = document.getElementById("time").value;
+    const dt2 = new Date(dt);
+    // n1 = Number(dt1);
+    // n2 = Number(dt2);
+    const time1 = dt1.getHours();
+    const time2 = dt2.getHours();
+    // console.log(n1);
+    const time = Math.abs(time1 - time2) / 1000;
+    const hours = Math.ceil(time / 60 * 60);
+    console.log(hours);
+//     var diff =(dt2 - dt1) / 1000;
+//     diff /= (60 * 60);
+//     return Math.abs(Math.round(diff));
   
+//  }
+
+// console.log(diff_minutes(dt1, dt2));
  }
-
-console.log(diff_minutes(dt1, dt2));
-
 </script>
 </html>

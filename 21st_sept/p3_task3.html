@@ -11,15 +11,16 @@
 </body>
 <script>
     var array = [];
-    var size = 20;
+    user = prompt("How many elements to take");
     // for (var i=0;i<size;i++)
     // {
     //     array[i] = prompt("Enter array element" + i(i+1));
     // }
 
 var result = [], temp = [], difference;
-for (var i = 0; i < array.size; i += 1) {
-        array[i] = prompt("Enter array element" + i(i+1));
+for (var i = 0; i < user; i++) 
+{
+    array[i] = prompt("Enter array element" + (i+1));
     if (difference !== (array[i] - i)) {
         if (difference !== undefined) {
             result.push(temp);

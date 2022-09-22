@@ -8,22 +8,22 @@
 </head>
 <body>
     <h3>Enter Your  Birthdate</h3>
-    <input type="text" id="value" placeholder="Ex:January 1 , 2022"><br><br>
+    <input type="date" id="value" placeholder="Ex:January 1 , 2022"><br><br>
     <input type="submit" onclick="hidate();">
     Days remaining for Your Birthday:<span id='sub'></span>
 </body>
 <script>
+    let value = [] ;
     function hidate(){
     var user = document.getElementById("value").value;
-    // console.log(user);
-    res = new Date(user);
-    var current = new Date();
-    diff = 0
-    days = 1000 * 60 * 60 * 24;
-
-    diff = current - res;
-    console.log((Math.floor(diff/days)))
-    document.getElementById("sub").innerHTML=(Math.floor(diff/days));
+    const res = new Date(user); 
+    console.log(res);  
+    const res2 = new Date();
+    console.log(res2);
+    const time = Math.abs(res2- res);
+    const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+    document.getElementById("sub").innerHTML = days;
+    console.log(days);
     }
 </script>
 </html>

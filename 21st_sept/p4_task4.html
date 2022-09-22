@@ -16,24 +16,28 @@
 
     function diff_minutes()
  {  
-    const dt1 = new Date();
+    const dt1 = new Date(); 
+    // console.log(dt1); // Date Form 
+
     const dt = document.getElementById("time").value;
-    const dt2 = new Date(dt);
-    // n1 = Number(dt1);
-    // n2 = Number(dt2);
+    console.log(dt); // user input 
+    // console.log(typeof dt);// string 
+
+    const dr = parseInt(dt);
+    console.log(typeof dr);
+
     const time1 = dt1.getHours();
-    const time2 = dt2.getHours();
-    // console.log(n1);
-    const time = Math.abs(time1 - time2) / 1000;
+    console.log(time1); 
+    console.log(typeof time1);
+
+    const time = Math.abs(time1 - dr) / 1000;
+    console.log(time);
+    console.log(typeof time);
+
     const hours = Math.ceil(time / 60 * 60);
     console.log(hours);
-//     var diff =(dt2 - dt1) / 1000;
-//     diff /= (60 * 60);
-//     return Math.abs(Math.round(diff));
-  
-//  }
+    console.log(typeof hours);
 
-// console.log(diff_minutes(dt1, dt2));
  }
 </script>
 </html>

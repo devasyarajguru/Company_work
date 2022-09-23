@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,4 +40,44 @@
 
  }
 </script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Time</title>
+</head>
+<body>
+    <div>
+        <h1>Lunch Time</h1>
+        <p id="lunch"></p>
+    </div>
+
+    <script>
+        let val = prompt("Enter time to lunch : ");
+        let hour = parseInt(val.split(':')[0]);
+        let min = parseInt(val.split(':')[1]);
+        let live_time = new Date();
+        let live_hour = live_time.getHours();
+        if(live_hour > 12) {
+            live_hour -= 12;
+        }
+        let live_min = live_time.getMinutes();
+        let user_tmin = (hour*(60)) + min;
+        let live_tmin = (live_hour*(60)) + live_min;
+        if(live_tmin > user_tmin) {
+        
+            user_tmin += (12*60);
+        }
+        let time_remain_min = (user_tmin - live_tmin) % 60;
+        let time_remain_hour_float = Math.floor((user_tmin - live_tmin) / 60);
+        let time_remain_hour = time_remain_hour_float.toString();
+        time_remain_hour = time_remain_hour.split('.')[0];
+        document.getElementById("lunch").innerHTML = time_remain_hour + " hr " + " : " + time_remain_min + " min " + "remaining for lunch time";
+        
+    </script>
+</body>
 </html>

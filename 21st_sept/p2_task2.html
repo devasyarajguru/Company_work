@@ -27,50 +27,55 @@
     }
 </script>
 </html> -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Birthday</title>
+</head>
 <body>
+    <div>
+        <h1>Find Your Next Birthday</h1>
+        <input style=" height: 45px;" type="date"
+        class="form-control" id="date-input" name="date" placeholder="YYYY/MM/DD"/>
+        <button id="submit">Submit</button>
+        <h4 id="congo"></h4>
+    </div>
 
-<h2>How many days left to my birtday?</h2>
-
-<form>
-  <label>Please enter your birthday: </label>
-  <br><br>
-  <input id="bday" onblur="calculateDays()" type="date" />
-  <p id="result"></p><br>
-  <span id="age23"></span>
-</form>
-  
-</body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
     <script>
-        // Enables to choose future dates
-(function () {
-  let today = new Date();
-  document.getElementById("bday").max = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + (today.getDate() < 10 ? ("0" + (today.getDate()-1)) : (today.getDate()-1));
-})();
 
-function calculateDays() {
+var day, month, year ,hours , min;
+
+const button = document.querySelector('button');
+                button.addEventListener('click',  () =>  {
+  var date = document.getElementById('date-input').value.split("-");
+  console.log(date, document.getElementById('date-input').value)
+  day = date[2];
+  month = date[1];
+  year = date[0];
+  hours = date[3];
+  min = date[4];
+
   let today = new Date();
-  let bday = new Date(document.getElementById("bday").value); 
-  let age = today.getFullYear() - bday.getFullYear();
-  
-  let upcomingBday = new Date(today.getFullYear(), bday.getMonth(), bday.getDate());
-  
-  if(today > upcomingBday) {
-    upcomingBday.setFullYear(today.getFullYear() + 1);
+  let age = today.getFullYear() - year;
+
+  let upcomingbday = new Date(today.getFullYear(), month-1, day);
+
+  if(today > upcomingbday) {
+    upcomingbday.setFullYear(today.getFullYear() + 1);
   }
-  
+
   var one_day = 24 * 60 * 60 * 1000;
-  
-  let daysLeft = Math.ceil((upcomingBday.getTime() - today.getTime()) / (one_day));
-  
-  // No need to calculate people older than 199 yo. :)   
-  if (daysLeft && age < 200) {
-    document.getElementById("result").innerText = `In ${daysLeft} day(s), you will be ${age + 1}!`;  
-  } else {
-    document.getElementById("result").innerText = "Please enter a valid birtday.";
-  }
-}
-    document.getElementById("age23").innerText = age;
+
+  let daysleft = Math.ceil((upcomingbday.getTime() - today.getTime()) / (one_day));
+
+  document.getElementById("congo").innerHTML = "In " + daysleft + " Day's, You will be " + (age+1) + " and  Hours Remaining:" + today.getHours() + "and " + (60-(today.getMinutes())) + "mins" ; 
+});
+
     </script>
+</body>
 </html>

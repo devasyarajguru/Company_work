@@ -38,7 +38,15 @@
     /* display: flex;
     width: 100%; */
 }
-
+.world
+{
+    text-align: center;
+    margin-top: 50px;
+}
+.world-para
+{
+    text-align: center;
+}
 
 /* .overlay
 {
@@ -254,7 +262,7 @@ nav img
     font:500;
     text-align: left;
     text-justify: inter-word;
-    color: #777;
+    color: rgb(121, 121, 121);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
@@ -315,4 +323,259 @@ nav img
 {
     background:black;
     color: #fff;
+}
+
+.mission
+{
+    background-color: #b3cee5;
+    width: 200px;
+    height: 400px;
+    /* margin-left:300px; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 0px; */
+    display: inline-block;
+    margin:  100px -130px 200px 170px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+
+.mission-image
+{
+    width: 200px;
+    height: 130px;
+    margin: 0;
+}
+
+.mission-image:hover
+{
+    opacity: 0.7;
+}
+
+.mission-head
+{
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.mission-para
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:3px ;
+    margin-left: 20px;
+    text-align: inherit;
+}
+
+.welcome-para
+{
+    background-color: #F5F5F5;
+    height: 900px;
+}
+
+.container-two
+{
+    width: 100%;
+    height: 180%;
+    /* margin: 10px auto; */
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+#connect-para
+{
+    color:black;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.contact-box
+{
+    background:#b3cee5;
+    display: flex;
+    width: 80%;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.contact-left
+{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right
+{
+    flex-basis: 40%;
+    padding: 15px ;
+    background: rgb(119, 119, 192);
+    color: #fff;
+}
+h2{
+    margin-bottom: 10px;
+}
+
+.container-two p 
+{
+    margin-bottom: 40px;
+}
+
+.input-row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-row .input-group
+{
+    flex-basis: 45%;
+    text-align: left;
+    font-size: larger;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc ;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+label{
+    margin-bottom:6px;
+    display: block;
+    color: #1c00b5;
+    text-align: left;
+}
+
+.message
+{
+    font-size: larger;
+}
+
+#button
+{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px  0px rgba(20,0,181,0.3);
+}
+
+.contact-left h3{
+    color:#1c00b5 ;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.contact-right h3{
+    /* color:#1c00b5 ; */
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top:20px ;
+}
+
+#same
+{
+    color:bisque;
+}
+
+#connect-one
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#connect-one::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#connect-one:hover::after{
+    width: 30%;
+}
+
+
+#skills
+{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#skills::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#skills:hover::after{
+    width: 14%;
+}
+
+.skill-container
+{
+    background-color:#b3cee5;
+    height: 30%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+display: inline-block;
+}
+
+.counter {
+  font-size: 40px;
+  margin-top: 10px;
+  color: black;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
 }

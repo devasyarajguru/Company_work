@@ -7,7 +7,7 @@ public class p1_task1 {
      
         String str = sc.nextLine();
      
-        String words[] = str.split("\\s");
+        String words[] = str.split(" ");
         String str2 = "";
      
         //Reverse each word's position
